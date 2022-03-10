@@ -1,0 +1,52 @@
+
+/* h1{
+    border: 2px solid #ccc;
+    padding: 20px 20px 300px 20px;
+}
+p{
+    background: #e7e7e7;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 20px;
+    margin: 0;
+}
+.fixo{
+    position: fixed;
+    left: 300px;
+    right: 0;
+    bottom: 200px;
+} */
+
+
+/* Absolute */
+
+/* div{
+    border: 2px solid #ccc;
+    margin-top: 40px;
+    padding: 20px 20px 40px 20px;
+    position: relative;
+}
+
+span{
+    background: #e7e7e7;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 0px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+} */
+
+.index1{
+    position: relative;
+    background: greenyellow;
+    top: -10px;
+    z-index: 1;
+}
+
+.index2{
+    position: absolute;
+    top: 30px;
+    background: lightcoral;
+    z-index: 2;
+}
