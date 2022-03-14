@@ -10,12 +10,13 @@ body{
 main{
     background: #000;
     width: 100vh;
-    height: 100vh;
+    height: 100%;
 }
 p{
     color: #fff;
     
 }
+/* EXEMPLO 1 */
 .exemplo1{
     width: 350px;
     height: 200px;
@@ -33,4 +34,162 @@ p{
     justify-content: center;
     border-radius: 5px;
     
+}
+/* EXEMPLO 2 */
+.exemplo2{
+    width: 350px;
+    height: 350px;
+    background: rebeccapurple;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.box2{
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+/* EXEMPLO 3 */
+.exemplo3{
+    width: 600px;
+    height: 350px;
+    background: rebeccapurple;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.exemplo3 div{
+    width: 130px;
+    height: 75px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/* EXEMPLO 4 */
+.exemplo4{
+    width: 600px;
+    height: 350px;
+    background: rebeccapurple;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.exemplo4 div{
+    width: 130px;
+    height: 75px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 110px;
+}
+#box4B{
+    height: 130px;
+}
+
+/* EXEMPLO 5 */
+
+.exemplo5{
+    width: 200px;
+    height: 500px;
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.exemplo5 div{
+    width: 180px;
+    height: 75px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/* EXEMPLO 6 */
+
+.exemplo6{
+    width: 200px;
+    height: 500px;
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.exemplo6 div{
+    width: 180px;
+    height: 75px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+#ex6boxB{
+    order: 0;
+}
+#ex6boxC{
+    order: 1;
+}
+#ex6boxA{
+    order: 2;
+}
+#ex6boxD{
+    order: 3;
+}
+
+/* EXEMPLO 7 */
+
+.exemplo7{
+    width: 450px;
+    height: 200px;
+    background-color: rebeccapurple;
+    border-radius: 10px;
+}
+.exemplo7 div{
+    width: 95px;
+    height: 75px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+#ex7boxA{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+#ex7boxB{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#ex7boxC{
+    position: relative;
+   margin-top: 0px;
+   margin-left: 0px;
+}
+#ex7boxD{
+    position: relative;
+    top: 0px;
+    left: 0px;
 }
