@@ -1,0 +1,134 @@
+body{
+    font-family: Arial;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgb(1, 1, 26);
+}
+
+header{
+    width: 1350px;
+    height: 50px;
+    /* border: 1px solid orange; */
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header a{
+    float: right;
+    color: white;
+    width: 130px;
+    font-size: 25px;
+    background: none;
+}
+header img{
+    float: left;
+}
+
+section{
+    width: 1350px;
+    height: 700px;
+    /* border: 1px solid orange; */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+h1{
+    font-size: 40px;
+}
+
+.box{
+    width: 350px;
+    height: 525px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.box2{
+    width: 350px;
+    height: 600px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.parcel{
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    /* border: 1px solid green; */
+}
+/* .parcel div{
+    border: 1px solid green;
+} */
+
+#parcelnum{
+    font-size: 25px;
+}
+#parcelval{
+    font-size: 50px;
+}
+p{
+    word-wrap: 250px;
+    width: 250px;
+    display: block;
+    display: inline-block;
+    align-items: center;
+    color: darkblue;
+}
+.condicoes{
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* border: 1px solid green; */
+}
+.check{
+    width: 20px;
+    height: 40px;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid green; */
+}
+.condicao{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    word-wrap: normal;
+    align-items: center;
+    color: darkblue;
+}
+a{
+    width: 300px;
+    height: 30px;
+    background-color: darkblue;
+    color: white;
+    display: block;
+    text-align: center;
+    /* margin-bottom: 15px;
+    margin-top: 20px; */
+    padding-top: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+#medalha{
+    width: 350px;
+    justify-content: end;
+    margin-top: 0px;
+}
