@@ -1,8 +1,11 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 body{
-    font-family: Arial;
+    font-family: 'Montserrat';
+    font-weight: bold;
     font-size: 18px;
     text-align: center;
-    background-color: rgb(1, 1, 26);
+    background-color: #001f3a;
 }
 
 header{
@@ -129,6 +132,9 @@ a{
 }
 #medalha{
     width: 350px;
-    justify-content: end;
+    display: flex;
+    justify-content:flex-end;
+    position: relative;
     margin-top: 0px;
+    /* border: 2px solid red; */
 }

@@ -161,8 +161,10 @@ p{
     height: 200px;
     background-color: rebeccapurple;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
 }
-.exemplo7 div{
+#ex7boxA, #ex7boxB, #ex7boxC, #ex7boxD{
     width: 95px;
     height: 75px;
     background-color: white;
@@ -172,24 +174,15 @@ p{
     justify-content: center;
    
 }
-#ex7boxA{
-    position: relative;
-    top: 0px;
-    left: 0px;
+.ex7-a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 2px solid yellow; */
 }
-#ex7boxB{
-    position: relative;
-    top: 0px;
-    left: 0px;
-}
-
-#ex7boxC{
-    position: relative;
-   margin-top: 0px;
-   margin-left: 0px;
-}
-#ex7boxD{
-    position: relative;
-    top: 0px;
-    left: 0px;
+.ex7-b{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 2px solid yellow; */
 }
