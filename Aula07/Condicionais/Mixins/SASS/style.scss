@@ -1,0 +1,171 @@
+$tema: dark;
+
+$cor-primaria: #ffb92f;
+$cor-fundo: #fff;
+$font-primaria: monospace;
+$texto-botao: #fff;
+$cor-texto: #001f3a;
+$gutter: 20px;
+$title: #ffb92f;
+$cor-botao: #005c91;
+
+
+@if $tema == ligth {
+    $cor-primaria: #005c91;
+    $title: #ffb92f;
+    $cor-botao: #005c91;
+    $cor-fundo: #fff;
+    $cor-texto: #001f2a;
+}
+
+@if $tema == dark {
+    $cor-primaria: #005c91;
+    $title: #ffb92f;
+    $cor-botao: #ff0000;
+    $cor-fundo: #001f2a;
+    $cor-texto: #fff;
+}
+
+@mixin type-1 ($size: 16) {
+    font-family: monospace;
+    font-size: normal;
+
+    @if $size == 16{
+        font-size: 1em;
+    }
+    @if $size == 18{
+        font-size: 1.25em;
+    }
+    @if $size == 24{
+        font-size: 1,5em;
+    }
+    @if $size == 64{
+        font-size: 2em;
+    }
+}
+
+@mixin border-box {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+@mixin title-large {
+    font-size: 4em;
+    line-height: 1;
+}
+
+@mixin title {
+    font-weight: bold;
+    font-family: $font-primaria;
+    color: $title;
+}
+
+@mixin text-large-1 {
+    @include title;
+    @include title-large;
+}
+
+@mixin separador($color: blue, $largura: 100px) {
+    &::after{
+        content: '';
+        display: block;
+        width: $largura;
+        height: 4px;
+        background-color: $color;
+    }
+}
+
+@mixin device($size-device) {
+    @if $size-device == mobile{
+        @media(min-width: 0px) and (max-width: 378px){
+            @content;
+        }
+    }
+    @else if $size-device == tablet{
+            @media (min-width: 379px) and (max-width:601px){
+                @content;
+            }
+        }
+        @else if $size-device == web{
+                @media (min-width: 602px){
+                    @content;
+                }
+            }
+        
+    
+}
+
+
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: $cor-fundo;
+    flex-direction: column;
+
+    @include device(mobile){
+        background: red;
+    }
+
+    @include device(tablet){
+        background: greenyellow;
+    }
+
+    @include device(web){
+        background: rebeccapurple;
+    }
+}
+
+main{
+    max-width: 500px;
+    @include border-box;
+
+}
+
+h1{
+    @include text-large-1;
+    @include separador(red, );
+}
+
+// h1{
+//     color: $cor-texto;
+//     font-family: $font-primaria;
+// }
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background: $cor-botao;
+    padding: 10px;
+    border-radius: 10px;
+    color: $texto-botao;
+    font-weight: bold;
+    font-family: $font-primaria;
+}
+p{
+    color: $cor-texto;
+    font-size: 18px;
+    font-family: $font-primaria;
+    margin-bottom: $gutter;
+    @include type-1(24);
+}
+ul{
+    text-align: center;
+    li{
+        display: inline-block;
+        list-style: none;
+        a{
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+            background: $cor-botao;
+            color: #fff;
+            &:hover{
+                background: pink;
+            }
+        }
+    }
+}

@@ -1,0 +1,186 @@
+
+
+main{
+    width: $container-width;
+    height: auto;
+    // border: $border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+
+    @include device(mobile){
+        flex-direction: column;
+        align-items: center;
+    }
+
+    font-size: $main-text-size;
+    font-family: arial;
+    line-height: 1.75rem;
+
+    h1{
+        font-size: $main-h1-text-size;
+    }
+   
+    section{
+        margin: 20px;
+        
+    }
+}
+
+// Principal Area - Video
+
+.principal-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: $principal-container-witdth;
+    height: $principal-container-heidth;
+    iframe{
+        width: $video-principal-width;
+        height: $video-principal-heigth;
+
+        @include device(mobile){
+            width: $video-principal-width-mobile;
+            height: $video-principal-heigth-mobile;
+        }
+    }
+}
+.principal-area-video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: $principal-container-witdth;
+    height: $principal-container-heidth;
+
+    @include device(mobile){
+        width: $principal-container-witdth-mobile;
+        height: $principal-container-heidth-mobile;
+    }
+    
+    background: $video-background-color;
+}
+.principal-video{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: $video-principal-width;
+    margin-top: 30px;   
+    
+   
+}
+.like{
+    width: $video-principal-width;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+
+    @include device(mobile){
+        width: $video-principal-width-mobile;
+        
+    }
+    
+    a{
+        width: $like-button-width;
+        height: $like-button-heidth;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $like-button-background-color;
+        color: $like-button-text-color;
+        text-decoration: none;
+        
+    }
+}
+
+// Principal Area - Video
+
+.interation{
+    width: $principal-container-witdth;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    background: $video-background-color;
+
+    @include device(mobile){
+        display: none;
+    }
+}
+
+.description{
+    border-top: 1px solid $separation-line-color;
+    border-bottom: 1px solid $separation-line-color;
+    width: $video-principal-width;
+    margin-top: 30px;
+    h1{
+        margin-top: 20px;
+    }
+    p{
+        margin-bottom: 20px;
+    }
+}
+
+.comment{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.comments{
+    
+    width: $video-principal-width;
+}
+
+// Second Area
+
+.second-area{
+    width: $second-container-width;
+    height: $second-container-heidth;
+    background: $video-background-color;
+    @include device(mobile){
+        width: $principal-container-witdth-mobile;
+        height: $principal-container-heidth-mobile;
+    }
+    iframe{
+        width: $video-second-width;
+        height: $video-second-heidth;
+        @include device(mobile){
+            width: $video-second-width-mobile;
+            height: $video-second-heidth-mobile;
+        }
+        
+       
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.small-video1{
+    display: flex;
+    flex-direction: column;
+    @include device(mobile){
+        flex-direction: row;
+        width: $principal-container-witdth-mobile;
+    }
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px;
+    @include device(mobile){
+        margin: 0px;
+    }
+    div{
+        width: $video-second-width;
+        @include device(mobile){
+            width: $video-second-width-mobile;
+            
+        }
+        
+    }
+}
+
