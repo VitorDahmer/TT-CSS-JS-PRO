@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+$widthPage: 1728px;
+
+body{
+    font-family: inter;
+    font-size: 40px;
+}
+
+.head{
+    width: $widthPage;
+    height: 117px;
+    background: #D41717;
+    color: #ffffff;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1{
+        margin: 30px;
+    }
+}
+
+.headLinks{
+    display: flex;
+    align-items: center;
+    a{
+        color: #ffffff;
+        text-decoration: none;
+        margin: 40px;
+    }
+}

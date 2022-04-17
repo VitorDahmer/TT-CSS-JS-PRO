@@ -1,0 +1,132 @@
+
+
+
+.principalCarousel{
+    width: $widthPage;
+    height: 585px;
+    margin: 0px auto;
+    background: #0F0E0E;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    
+}
+
+.searchForm{
+    width: $widthPage;
+    height: 100px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #808080;
+    input{
+        font-size: 40px;
+        width: 700px;
+        text-align: center;
+    }
+    button{
+        font-size: 40px;
+        width: 250px;
+        background-color: #D41717;
+        color: #ffffff;
+    }
+}
+
+.carouselAdd{
+    display: flex;
+    align-items: center;
+    width: $widthPage;
+    color: #ffffff;
+
+    img{
+        height: max(580px);
+        
+        
+    }
+   
+    div{
+        width: 30%;
+        height: 580px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+        h2{
+            font-size: 35px;
+        }
+        p{
+            font-size: 25px;
+        }
+        a{
+            color: #ffffff;
+            background: #D41717;
+            width: 350px;
+            height: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 30px;
+        }
+    }
+}
+
+.catalogo{
+    width: $widthPage;
+    margin: 0px auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background: gray;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.addBox{
+    background:#C4C4C4;
+    width: 480px;
+    height: 682px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    div{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            margin-bottom: 60px;
+            text-align: center;
+        }
+        a{
+            color: #ffffff;
+            text-decoration: none;
+            
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            background: #D41717;
+            border-radius: 5px;
+            width: 359px;
+            height: 60px;
+            padding-top: 19px;
+        }
+        
+    }
+}
+
+.addImg{
+    width: 433px;
+    height: 400px;
+    border-radius: 5px;
+    background: #000000;
+    margin-top: 20px;
+    img{
+        height: max(400px);
+    }
+   
+}

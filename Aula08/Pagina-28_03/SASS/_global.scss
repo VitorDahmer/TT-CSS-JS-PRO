@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+
+$page-width: 1854px;
+$page-width-tablet: 600px;
+$page-width-mobile: 375px;
+$border: none; 
+// 1px solid #ffa500
+
+body{
+    background: #001F3A;
+    width: 100vh;
+    height: 100vh;
+    font-family: Montserrat;    
+    font-size: 36px;
+}
+
+header{
+    border: $border;
+    width: $page-width;
+    height: 114px;
+    @include device(mobile){
+        width: $page-width-mobile;
+    }
+    @include device(tablet){
+        width: $page-width-tablet;
+    }
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Montserrat;
+    img{
+        width: 298px;
+        height: 106px;
+    }
+    a{
+        font-family: Montserrat;
+        color: #ffffff;
+        font-size: 36px;
+        text-decoration: none;
+    }
+    div{
+        width: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+main{
+    border: $border;
+    width: $page-width;
+    @include device(mobile){
+        width: $page-width-mobile;
+    }
+    @include device(tablet){
+        width: $page-width-tablet;
+    }
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}

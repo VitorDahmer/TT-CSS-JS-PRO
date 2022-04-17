@@ -1,0 +1,135 @@
+
+$promotion-box-color: #FFB92F;
+$promotion-box-width: 416px;
+$promotion-box-width-tablet: 400px;
+$promotion-box-width-mobile: 300px;
+$promotion-box-heidth: 610px;
+$promotion-conditions-text-color: #005C91;
+$promotion-price-text-color: #001F3A;
+
+.promotion{
+    width: $page-width;
+    height: auto;
+    border: $border;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-top: 400px;
+    margin-bottom: 150px;
+    @include device(mobile){
+        width: $page-width-mobile;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    @include device(tablet){
+        width: $page-width-tablet;
+    }
+}
+
+.prom-box{
+    width: $promotion-box-width;
+    height: $promotion-box-heidth;
+    border-radius: 10px;
+    background: $promotion-box-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    
+    margin-bottom: 30px;
+    h1{
+        line-height: 35px;
+        color: $promotion-price-text-color;
+        font-weight: bold;
+        margin-bottom: 31px;
+    }
+    h2{
+        font-size: 58px;
+        line-height: 56px;
+        font-weight: bold;
+        color: $promotion-price-text-color;
+        margin-bottom: 6px;
+        span{
+            font-size: 35px;
+        }
+    }
+    h3{
+        font-size: 21px;
+        color: $promotion-conditions-text-color;
+    }
+    a{
+        width: 304px;
+        height: 61px;
+        margin-bottom: 35px;
+        background: #00396B;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        @include device(mobile){
+            width: 250px;
+            
+        }
+        @include device(tablet){
+            width: 250px;
+        }
+    }
+    @include device(mobile){
+        width: $promotion-box-width-mobile;
+        
+    }
+    @include device(tablet){
+        width: $promotion-box-width-tablet;
+    }
+}
+
+.prom-box2{
+    height: 700px;
+    position: relative;
+    
+}
+.medalha{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.conditions{
+    margin: 20px;
+    margin-top: 51px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 300px;
+        @include device(mobile){
+            width: 270px;
+            
+        }
+        @include device(tablet){
+            width: 270px;
+        }
+        p{
+            font-size: 21px;
+            width: 243px;
+            color: $promotion-conditions-text-color;
+            line-height: 25px;
+            margin-bottom: 8px;
+        }
+        img{
+            width: 25px;
+            height: 25px;
+        }
+        
+        
+    }
+}

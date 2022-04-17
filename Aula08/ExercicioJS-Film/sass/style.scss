@@ -1,0 +1,74 @@
+body{
+    background-color: darkgray;
+}
+.formSearch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    input{
+        width: 270px;
+        height: 25px;
+        margin-bottom: 10px;
+    }
+}
+
+.listItens{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.searchFilm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkblue;
+    color: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 280px;
+    height: 600px;
+    margin: 20px;
+
+    img{
+        width: 270px;
+        height: max(400px);
+        margin-bottom: 0px;
+    }
+   
+}
+
+.searchFilmCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 0px;
+    div{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    h1{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 0px;
+        height: 70px;
+    }
+    p{
+        font-size: 20px;
+    }
+    span{
+        font-size: 10px;
+    }
+}
+
+#year{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
